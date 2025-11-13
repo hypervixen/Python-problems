@@ -1,0 +1,10 @@
+1	class Solution(object):
+2	    def merge(self, nums1, m, nums2, n):
+3	        nums1[:] = nums1[:m]
+4	        nums1.extend(nums2)        
+5	        nums1.sort()
+6	
+7	nums1 = [1,2,3,0,0,0]
+8	nums2 = [2,5,6]
+9	Solution().merge(nums1, 3, nums2, 3)
+10	print(nums1)
