@@ -1,0 +1,8 @@
+##415. Add Strings
+class Solution:
+    def addStrings(self, num1, num2):
+        add = int(num1) + int(num2)
+        return str(add)
+
+sol = Solution()
+print(sol.addStrings("14", "178"))
