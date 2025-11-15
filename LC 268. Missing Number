@@ -1,0 +1,10 @@
+class Solution(object):
+    def missingNumber(self, nums):
+        nums.sort()
+        max_num = max(nums)
+        missing = [num for num in range(0, max_num + 1) if num not in nums]
+        return missing[0] if missing else max_num + 1
+
+nums = [3, 0, 1]
+solution = Solution()
+print("Missing number:", solution.missingNumber(nums))
