@@ -1,0 +1,5 @@
+        result = []
+        for num in nums:
+            smaller_count = sum(1 for j in nums if j < num)
+            result.append(smaller_count)
+        return result
